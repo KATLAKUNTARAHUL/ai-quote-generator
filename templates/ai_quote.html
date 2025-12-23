@@ -5,13 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Quote Generator</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px 40px;
+            border-radius: 12px;
+            max-width: 600px;
+            width: 90%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            margin: 5px 0;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        .author {
+            font-weight: bold;
+        }
+        
+        .category {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>AI Quote Generator</h1>
-    <h2>Quote: {{ quote1 }}</h2>
-    <p>Author: {{ author1 }}</p>
-    <p>Category: {{ category1 }}</p>
+    <div class="container">
+        <h1>AI Quote Generator</h1>
+        <h2>“{{ quote1 }}”</h2>
+        <p class="author">— {{ author1 }}</p>
+        <p class="category">Category: {{ category1 }}</p>
+    </div>
 </body>
 
 </html>
